@@ -11,19 +11,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        components()
+    }
 
-        val btnEstudiantes = findViewById<Button>(R.id.btnEstudiantes)
-        val btnEstadisticas = findViewById<Button>(R.id.btnEstadisticas)
-        val btnAyuda = findViewById<Button>(R.id.btnAyuda)
+    private fun components() {
+        var btnEstudiantes:Button = findViewById(R.id.btnEstudiantes)
+        var btnEstadisticas:Button = findViewById(R.id.btnEstadisticas)
+        var btnAyuda:Button = findViewById(R.id.btnAyuda)
 
+        btnEstudiantes.setOnClickListener{ OnClick(1) }
+        btnEstadisticas.setOnClickListener { OnClick(2) }
+        btnAyuda.setOnClickListener { OnClick(3) }
+    }
 
-
-        btnEstudiantes.setOnClickListener {
-            val intent:Intent = Intent(this ,MainActivity2::class.java)
-            startActivity(intent)
-
-
-        }
+    private fun OnClick(button:Int) {
+        when(button){
+            1 -> { startActivity(Intent(this,MainActivity2::class.java)) }
+            2 -> { startActivity(Intent(this,MainActivity4::class.java)) }
+            3 -> { startActivity(Intent(this,MainActivity3::class.java)) }
         }
     }
+}
+
+
+
+
+
 

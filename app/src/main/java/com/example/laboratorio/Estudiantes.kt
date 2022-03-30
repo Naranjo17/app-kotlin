@@ -21,14 +21,7 @@ class Estudiantes {
 
     var promedio:Double=0.0
 
-    override fun toString(): String {
-        return "Estudiante( nombre='$nombre'," +
-                " edad=$edad, telefono='$telefono', direccion='$direccion'," +
-                " materia1='$materia1', materia2='$materia2', " +
-                "materia3='$materia3', materia4='$materia4', materia5='$materia5'," +
-                " nota1=$nota1, nota2=$nota2, nota3=$nota3, nota4=$nota4, " +
-                "nota5=$nota5, promedio=$promedio)"
-    }
+    var estadoEstudiante:String=""
 
 
 }
