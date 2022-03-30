@@ -65,7 +65,7 @@ class MainActivity5 : AppCompatActivity() {
             var bundleVerDatos:Bundle? = this.intent.extras
 
             if(bundleVerDatos != null){
-                nombreEs!!.text = "${bundleVerDatos.getString("nombreE")}"
+                nombreEs!!.text = "${bundleVerDatos.getString("txtName")}"
 
                 materiaEs1!!.text = "${bundleVerDatos.getString("materia1")}"
                 materiaEs2!!.text = "${bundleVerDatos.getString("materia2")}"
@@ -79,8 +79,8 @@ class MainActivity5 : AppCompatActivity() {
                 nota4Es!!.text = "${bundleVerDatos.getDouble("nota4")}"
                 nota5Es!!.text = "${bundleVerDatos.getDouble("nota5")}"
 
-                promedioEs!!.text = "${bundleVerDatos.getDouble("promedioE")}"
-                ganoPerdio!!.text = "${bundleVerDatos.getString("ganoPerdio")}"
+                promedioEs!!.text = "${bundleVerDatos.getDouble("promedio")}"
+                ganoPerdio!!.text = "${bundleVerDatos.getString("Notas")}"
             }
         }
     }

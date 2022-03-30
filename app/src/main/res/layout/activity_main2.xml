@@ -13,12 +13,8 @@
         android:text="Ingresar estudiantes"
         android:textAlignment="center"
         android:textSize="25dp"
-        android:layout_marginTop="10dp"
         />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="5dp"
                 android:hint="Nombre"
 
                 />
@@ -46,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="numberSigned"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="5dp"
                 android:hint="Edad"
                 />
 
@@ -58,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="numberSigned"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="5dp"
                 android:hint="Telefono"
                 />
 
@@ -68,9 +64,10 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="5dp"
                 android:hint="Direccion"
                 />
+        </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -78,134 +75,130 @@
                 android:text="Ingresar materias"
                 android:textAlignment="center"
                 android:textSize="25dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 />
-
-
-        </LinearLayout>
-    </ScrollView>
-
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:columnCount="10"
-        android:rowCount="6">
-
-        <TextView
-            android:layout_width="206dp"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="3"
-            android:text="Materia"
-            android:textAlignment="center"
-            android:textSize="25sp">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="186dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:layout_columnSpan="3"
-            android:text="Nota"
-            android:textAlignment="center"
-            android:textSize="25sp">
-
-        </TextView>
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/Materia1"
-            android:layout_width="202dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:ems="8"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/Materia2"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:ems="8"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/Materia3"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_row="3"
-            android:layout_column="0"
-            android:ems="8"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/Materia4"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_row="4"
-            android:layout_column="0"
-            android:ems="8"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/Materia5"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_row="5"
-            android:layout_column="0"
-            android:ems="8"
-            android:inputType="textPersonName" />
+            android:hint="Type the course"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
 
         <EditText
             android:id="@+id/nota1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="3"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="3"
+            android:hint="Note"
+            android:textSize="20dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Materia2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type the course"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
 
         <EditText
             android:id="@+id/nota2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="3"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="3"
+            android:hint="Note"
+            android:textSize="20dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Materia3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type the course"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
 
         <EditText
             android:id="@+id/nota3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_row="3"
-            android:layout_column="3"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="3"
+            android:hint="Note"
+            android:textSize="20dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Materia4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type the course"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
 
         <EditText
             android:id="@+id/nota4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_row="4"
-            android:layout_column="3"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="3"
+            android:hint="Note"
+            android:textSize="20dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Materia5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type the course"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
 
         <EditText
             android:id="@+id/nota5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_row="5"
-            android:layout_column="3"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="3"
+            android:hint="Note"
+            android:textSize="20dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
 
 
-    </GridLayout>
 
     <Button
         android:id="@+id/btnRegistrar"
@@ -220,16 +213,7 @@
 
     </Button>
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-
-
-    />
-
-
-
-
 </LinearLayout>
+
+
+
