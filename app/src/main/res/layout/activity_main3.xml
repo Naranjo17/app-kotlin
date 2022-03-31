@@ -22,18 +22,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06" />
 
+
     <TextView
         android:id="@+id/txtMessageHelp"
         android:layout_width="325dp"
-        android:layout_height="268dp"
-        android:text="Ayuda"
+        android:layout_height="500dp"
+        android:text="La aplicacion para registro de estudiantes y notas del colegio mis pequeños saltamontes, es una aplicacion muy facil de usar.Si eres profesor y deseas ingresar los datos de un estudiante y sus respectivas notas, solo debes oprimir sobre el boton que dice INGRESAR ESTUDIANTES y alli ingresas la informacion y les das en el boton registrar,despues de ingresar los estudiantes te muestra otra ventana donde puedes encontrar la informacion ya registrada.Y por ultimo esta el boton de estadisticas donde podras ver cuantos estudiantes se ha ingresado,cuantos han perdido las materias,cuantos han ganado y cuantos perdieron pero pueden recuperar. "
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.498" />
 
     <Button
         android:id="@+id/btnVolverAyuda"

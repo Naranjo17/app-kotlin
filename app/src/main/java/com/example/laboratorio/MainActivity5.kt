@@ -83,4 +83,15 @@ class MainActivity5 : AppCompatActivity() {
                 ganoPerdio!!.text = "${bundleVerDatos.getString("Notas")}"
             }
         }
+
+    private fun Volver(){
+        var btnEstadisticas: Button = findViewById(R.id.btnVolverEstadisticas)
+        btnEstadisticas.setOnClickListener{ OnClick(1) }
+    }
+
+    private fun OnClick(button:Int){
+        when(button){
+            1 -> { startActivity(Intent(this,MainActivity::class.java)) }
+        }
+    }
     }
